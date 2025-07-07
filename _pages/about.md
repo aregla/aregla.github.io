@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.asc.upenn.edu/research/centers/center-on-digital-culture-and-society/people'>Affiliations</a>. 
+subtitle: <a href='https://www.asc.upenn.edu/research/centers/center-on-digital-culture-and-society/people'>University of Pennsylvania</a>. 
 
 profile:
   align: right
@@ -28,4 +28,5 @@ latest_posts:
 ---
 
 My name is Alejandra Regla-Vargas and I am a User Researcher at TikTok, focusing on Trust and Safety. Prior to joining TikTok, I earned my Ph.D. in Sociology and A.M. in Statistics and Data Science at the University of Pennsylvania. I am also a Research Affiliate at the Center on Digital Culture and Society at the University of Pennsylvania's Annenberg School for Communication, where I am currently researching the use of generative ai tools to study online social movement dynamics. 
+
 
