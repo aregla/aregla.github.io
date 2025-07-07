@@ -50,11 +50,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-i-will-interning-at-tiktok-this-summer-as-a-user-experience-researcher",
+            },},{id: "news-i-will-interning-at-tiktok-this-summer-as-a-user-experience-researcher",
           title: 'I will interning at TikTok this summer as a User Experience Researcher 🥁...',
+          description: "",
+          section: "News",},{id: "news-i-will-be-presenting-my-research-at-the-american-sociological-association-conference-digital-sociology-session",
+          title: 'I will be presenting my research at the American Sociological Association Conference (Digital...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
