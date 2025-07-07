@@ -27,4 +27,5 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My name is Alejandra Regla-Vargas and I am a User Researcher at TikTok, focusing on Trust and Safety. Prior to joining TikTok, I earned my Ph.D. in Sociology and A.M. in Statistics and Data Science at the University of Pennsylvania. My dissertation examined the dissemination and contestation of misinformation on social networking sites. Outside of work, I enjoy crafting, reading , and running. 
+My name is Alejandra Regla-Vargas and I am a User Researcher at TikTok, focusing on Trust and Safety. Prior to joining TikTok, I earned my Ph.D. in Sociology and A.M. in Statistics and Data Science at the University of Pennsylvania. I am also a Research Affiliate at the Center on Digital Culture and Society at the University of Pennsylvania's Annenberg School for Communication, where I am currently researching the use of generative ai tools to study online social movement dynamics. 
+
