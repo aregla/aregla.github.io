@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will interning at TikTok this summer as a User Experience Researcher 🥁
+I will be interning at TikTok this summer as a User Experience Researcher 🥁
