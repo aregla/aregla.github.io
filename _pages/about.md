@@ -27,9 +27,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! My name is Alejandra Regla-Vargas and I am a User Researcher at TikTok, focusing on Trust and Safety. I lead mixed-methods research projects (qualitative and quantitative) that aim to improve user safety and trust across TikTok. 
+Hello! My name is Alejandra Regla-Vargas and I am a User Researcher at TikTok, focusing on Trust and Safety. I lead mixed-methods research projects (qualitative and quantitative) that aim to improve user safety and trust across TikTok. I am also a Research Affiliate at the Center on Digital Culture and Society at the University of Pennsylvania's Annenberg School for Communication.
 
-Prior to TikTok, I earned my Ph.D. in Sociology and M.A. in Statistics and Data Science at the University of Pennsylvania. My dissertation research leveraged computational tools to examine the dissemination and contestation of misinformation on social networking sites. My research interests lie at the intersection of race/ethnicity, digital culture, and computational social science. I am a Research Affiliate at the Center on Digital Culture and Society at the University of Pennsylvania's Annenberg School for Communication. If you have any questions or simply want to chat, please reach out: <aregla@sas.upenn.edu>
+Prior to TikTok, I earned my Ph.D. in Sociology and M.A. in Statistics and Data Science at the University of Pennsylvania. My dissertation research leveraged computational tools to examine the dissemination and contestation of misinformation on social networking sites. My research interests lie at the intersection of race/ethnicity, digital culture, and computational social science. If you have any questions or simply want to chat, please reach out: <aregla@sas.upenn.edu>
 
 
 
