@@ -91,7 +91,7 @@
   .hero {
     min-height: 100vh;
     display: flex; align-items: center; justify-content: center;
-    padding: 120px 40px 80px;
+    padding: 90px 40px 60px;
     position: relative; overflow: hidden;
   }
   .hero::before {
@@ -109,7 +109,7 @@
   .hero-inner {
     max-width: 1100px; width: 100%;
     display: grid; grid-template-columns: 1fr auto;
-    gap: 64px; align-items: center;
+    gap: 48px; align-items: center;
     position: relative; z-index: 1;
   }
   .hero-text { animation: fadeUp 1s ease forwards; opacity: 0; }
@@ -124,12 +124,12 @@
   .hero-divider {
     width: 100%; height: 1.5px;
     background: var(--light-border);
-    border: none; margin: 28px 0;
+    border: none; margin: 20px 0;
   }
   .hero-title {
     font-size: 0.78rem; font-weight: 500;
     text-transform: uppercase; letter-spacing: 0.18em;
-    color: var(--muted); margin-bottom: 20px;
+    color: var(--muted); margin-bottom: 14px;
     display: flex; align-items: center; gap: 12px;
   }
   .hero-title::before {
@@ -140,7 +140,7 @@
     color: var(--muted); max-width: 520px;
   }
   .hero-links {
-    margin-top: 28px; display: flex; gap: 20px; align-items: center;
+    margin-top: 20px; display: flex; gap: 20px; align-items: center;
   }
   .hero-links a {
     font-size: 0.82rem; color: var(--warm); text-decoration: none;
@@ -175,7 +175,7 @@
   }
 
   /* SECTIONS */
-  section { padding: 60px 40px; }
+  section { padding: 44px 40px; }
   .section-label {
     font-size: 0.72rem; font-weight: 600;
     text-transform: uppercase; letter-spacing: 0.2em;
@@ -189,7 +189,7 @@
     font-family: var(--font-display);
     font-size: clamp(2rem, 3.5vw, 2.8rem);
     font-weight: 600; line-height: 1.2;
-    margin-bottom: 48px; color: var(--ink);
+    margin-bottom: 32px; color: var(--ink);
   }
 
   /* ABOUT */
@@ -197,10 +197,10 @@
   .about-inner { max-width: 1100px; margin: 0 auto; }
   .about-grid {
     display: grid; grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px; margin-top: 20px;
+    gap: 24px; margin-top: 12px;
   }
   .about-card {
-    padding: 36px 28px;
+    padding: 28px 24px;
     border: 1px solid var(--light-border); border-radius: 6px;
     transition: all 0.4s ease;
     position: relative; overflow: hidden;
@@ -231,7 +231,7 @@
   /* PORTFOLIO */
   .portfolio { background: var(--cream); }
   .portfolio-inner { max-width: 1100px; margin: 0 auto; }
-  .portfolio-grid { display: flex; flex-direction: column; gap: 32px; }
+  .portfolio-grid { display: flex; flex-direction: column; gap: 20px; }
 
   .project-card {
     background: white; border-radius: 8px;
@@ -242,7 +242,7 @@
   .project-card:hover { box-shadow: 0 8px 36px rgba(0,0,0,0.06); }
 
   .project-header {
-    padding: 36px 40px;
+    padding: 28px 36px;
     cursor: pointer;
     display: flex; align-items: flex-start; justify-content: space-between;
     gap: 24px;
@@ -364,7 +364,7 @@
   .pub-list { display: flex; flex-direction: column; }
   .pub-year-group {
     display: grid; grid-template-columns: 72px 1fr;
-    gap: 0 48px; padding: 32px 0;
+    gap: 0 48px; padding: 20px 0;
     border-bottom: 1px solid var(--light-border);
   }
   .pub-year-group:last-child { border-bottom: none; }
@@ -373,7 +373,7 @@
     font-size: 1.05rem; font-weight: 600; color: var(--warm);
     padding-top: 3px;
   }
-  .pub-items { display: flex; flex-direction: column; gap: 24px; }
+  .pub-items { display: flex; flex-direction: column; gap: 16px; }
   .pub-title {
     font-size: 0.96rem; font-weight: 500; line-height: 1.5;
     margin-bottom: 6px; color: var(--ink);
@@ -412,7 +412,7 @@
 
   /* SKILLS BAR */
   .skills-bar {
-    margin-top: 48px; padding-top: 48px;
+    margin-top: 32px; padding-top: 32px;
     border-top: 1px solid var(--light-border);
   }
   .skills-bar h3 {
@@ -446,7 +446,7 @@
     width: 1.5px; background: var(--warm-light);
   }
   .timeline-item {
-    position: relative; margin-bottom: 40px;
+    position: relative; margin-bottom: 28px;
     opacity: 0; animation: fadeUp 0.6s ease forwards;
   }
   .timeline-item:nth-child(1)  { animation-delay: 0.1s; }
@@ -484,7 +484,7 @@
   .milestones-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
   .milestones-body.open { max-height: 6000px; }
   .timeline-tabs {
-    display: flex; gap: 8px; flex-wrap: wrap; margin: 28px 0 8px;
+    display: flex; gap: 8px; flex-wrap: wrap; margin: 20px 0 8px;
   }
   .timeline-tab {
     font-size: 0.72rem; font-weight: 500;
@@ -534,7 +534,7 @@
 
   /* FOOTER */
   footer {
-    padding: 60px 40px; border-top: 1px solid var(--light-border);
+    padding: 40px; border-top: 1px solid var(--light-border);
     background: white;
   }
   .footer-inner {
@@ -557,6 +557,50 @@
   .footer-contact .sep { color: var(--warm-light); font-size: 0.7rem; }
   .footer-copy {
     font-size: 0.78rem; color: var(--muted); letter-spacing: 0.04em;
+  }
+
+  /* PASSWORD GATE */
+  .pw-gate {
+    padding: 40px;
+    border-top: 1px solid var(--light-border);
+    display: flex; flex-direction: column; align-items: center;
+    gap: 16px; text-align: center;
+  }
+  .pw-gate-icon {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--warm-pale); color: var(--warm);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+  }
+  .pw-gate-label {
+    font-family: var(--font-display);
+    font-size: 1.15rem; font-weight: 600; color: var(--ink);
+  }
+  .pw-gate-hint {
+    font-size: 0.85rem; color: var(--muted); max-width: 320px; line-height: 1.6;
+  }
+  .pw-gate-row {
+    display: flex; gap: 10px; align-items: center; margin-top: 4px;
+  }
+  .pw-gate-input {
+    font-family: var(--font-body); font-size: 0.9rem;
+    padding: 10px 16px; border-radius: 4px;
+    border: 1.5px solid var(--warm-light);
+    background: white; color: var(--ink);
+    outline: none; transition: border-color 0.2s;
+    width: 200px;
+  }
+  .pw-gate-input:focus { border-color: var(--warm); }
+  .pw-gate-input.error { border-color: #c0392b; }
+  .pw-gate-btn {
+    font-family: var(--font-body); font-size: 0.85rem; font-weight: 500;
+    padding: 10px 20px; border-radius: 4px;
+    background: var(--warm); color: white; border: none;
+    cursor: pointer; transition: background 0.2s; white-space: nowrap;
+  }
+  .pw-gate-btn:hover { background: var(--ink); }
+  .pw-gate-error {
+    font-size: 0.8rem; color: #c0392b; display: none;
   }
 
   /* ANIMATIONS */
@@ -591,9 +635,9 @@
     }
     .nav-links.open a { font-size: 1.1rem; }
     .hamburger { display: block; }
-    section { padding: 60px 24px; }
-    .hero { padding: 100px 24px 60px; }
-    .section-heading { margin-bottom: 32px; }
+    section { padding: 36px 24px; }
+    .hero { padding: 80px 24px 48px; }
+    .section-heading { margin-bottom: 24px; }
     .timeline { padding-left: 36px; }
     .timeline-dot { left: -32px; }
     .project-header { padding: 24px; flex-direction: column; }
@@ -659,11 +703,11 @@
   <div class="hero-inner">
     <div class="hero-text">
       <div class="hero-greeting">Hi! I'm Alejandra.</div>
-      <h1 class="hero-name">Alejandra<br>Regla<span class="accent">,</span> Ph.D.</h1>
+      <h1 class="hero-name">Hi! I'm Alejandra.</h1>
       <hr class="hero-divider">
       <div class="hero-title">User Researcher · TikTok</div>
       <p class="hero-desc">
-        I lead research efforts for marketing and communications teams — equipping them with the insights they need to make informed, user-centered decisions.
+        I lead research efforts for product marketing and communications teams — equipping them with the insights they need to make informed, user-centered decisions.
       </p>
       <div class="hero-links">
         <a href="https://www.linkedin.com/in/alejandra-regla-vargas/" target="_blank" rel="noopener">↗ LinkedIn</a>
@@ -784,6 +828,153 @@
         </div>
       </div>
 
+      <!-- PROJECT 2: User Trust Benchmark -->
+      <div class="project-card">
+        <div class="project-header" onclick="toggleProject(this)">
+          <div class="project-header-left">
+            <div class="project-type">Quantitative Research</div>
+            <div class="project-title">Quarterly User Trust Benchmark</div>
+            <div class="project-subtitle">Developed trackable measures of user trust across eight global markets to inform cross-functional trust-building efforts at TikTok.</div>
+          </div>
+          <button class="project-toggle" aria-label="Expand project">+</button>
+        </div>
+        <div class="project-body">
+          <div class="project-content">
+
+            <div class="project-section">
+              <div class="project-section-title">Background</div>
+              <p>The quarterly User Trust Benchmark aims to create robust and trackable measures of user trust that relate to sustained trust-building efforts by cross-functional teams spanning TikTok. User survey data was collected from adult users representative of TikTok's core user cohorts across eight key global markets (US, UK, DE, FR, ID, JP, MX, and BR). The benchmark measures both overall user trust of TikTok and the extent to which users agree with 16 attitudinal statements that map onto cross-functional trust efforts across the platform.</p>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Research Objectives</div>
+              <ul>
+                <li>Understand how user trust varies by region</li>
+                <li>Create robust, trackable measures of user trust by region and activity level</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Methodology</div>
+              <p>Quantitative survey with adult users (18+) across eight global markets. Participants rated their overall trust of TikTok on a 1–10 scale and responded to 16 attitudinal statements (e.g., "TikTok respects my data privacy," "TikTok is a place to learn") using a Likert-scale format.</p>
+              <div class="method-tags">
+                <span class="method-tag">Survey</span>
+                <span class="method-tag">Quantitative</span>
+                <span class="method-tag">8 Global Markets</span>
+                <span class="method-tag">Longitudinal</span>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Key Findings</div>
+              <div class="findings-grid">
+                <div class="finding-card">Trust scores varied meaningfully across regions, with markets in Southeast Asia and Latin America indexing higher than Western European markets.</div>
+                <div class="finding-card">Higher-activity users reported stronger trust across most attitudinal dimensions, suggesting engagement and trust are mutually reinforcing.</div>
+                <div class="finding-card">Data privacy was the lowest-scoring attitudinal dimension globally, representing a consistent gap across all eight markets.</div>
+                <div class="finding-card">Learning and entertainment-related attitudinal items ("TikTok is a place to learn") scored highest, signaling these as established trust anchors.</div>
+                <div class="finding-card">Regional trust profiles diverged on safety and content quality dimensions, pointing to the need for market-specific communications strategies.</div>
+                <div class="finding-card">Tracking across quarters revealed that trust is sensitive to platform events, underscoring the value of repeated measurement over time.</div>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Recommendations</div>
+              <div class="rec-grid">
+                <div class="rec-card">
+                  <div class="rec-number">01</div>
+                  <div>Prioritize data privacy messaging in trust-building campaigns globally. Given this dimension's consistently low scores, communications that clearly explain how TikTok handles user data can close the largest trust gap.</div>
+                </div>
+                <div class="rec-card">
+                  <div class="rec-number">02</div>
+                  <div>Tailor regional strategies to local trust profiles. Western European markets require distinct approaches — especially around safety and transparency — compared to high-trust markets in Southeast Asia and Latin America.</div>
+                </div>
+                <div class="rec-card">
+                  <div class="rec-number">03</div>
+                  <div>Leverage learning and entertainment as trust entry points. These dimensions are already established strengths and can serve as a foundation for messaging that bridges into lower-scoring areas like privacy and safety.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Data Privacy Perceptions -->
+      <div class="project-card">
+        <div class="project-header" onclick="toggleProject(this)">
+          <div class="project-header-left">
+            <div class="project-type">Qualitative Research</div>
+            <div class="project-title">User Perceptions of Data Privacy &amp; Handling</div>
+            <div class="project-subtitle">A follow-up qualitative study exploring why low-trust users distrust TikTok's data practices — and what would shift their perceptions.</div>
+          </div>
+          <button class="project-toggle" aria-label="Expand project">+</button>
+        </div>
+        <div class="project-body">
+          <div class="project-content">
+
+            <div class="project-section">
+              <div class="project-section-title">Background</div>
+              <p>Data privacy emerged as the lowest-scoring attitudinal dimension in the quarterly User Trust Benchmark — a consistent gap across all eight global markets. To understand the drivers behind this finding, a follow-up qualitative study was conducted with US-based users who disagreed that TikTok respects their data privacy and handles data appropriately as a company. By recruiting specifically from the low end of the trust spectrum, this study was designed to surface the underlying beliefs, mental models, and experiences shaping data privacy concerns.</p>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Research Objectives</div>
+              <ul>
+                <li>Understand what drives distrust in TikTok's data privacy and handling practices</li>
+                <li>Identify the mental models users hold around how TikTok collects and uses their data</li>
+                <li>Surface what information or experiences could shift user perceptions</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Methodology</div>
+              <p>1:1 semi-structured interviews with US adults who scored low on trust and disagreed with data privacy attitudinal statements in the benchmark. Participants were recruited across varying levels of overall platform trust to capture a range of skepticism — from general wariness to active concern.</p>
+              <div class="method-tags">
+                <span class="method-tag">Semi-Structured Interviews</span>
+                <span class="method-tag">Qualitative</span>
+                <span class="method-tag">Low-Trust Users</span>
+                <span class="method-tag">United States</span>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Key Findings</div>
+              <div class="findings-grid">
+                <div class="finding-card"><strong>Trust is easily lost and slowly earned.</strong> Users tend to start with moderate trust that deepens through sustained positive experiences — but a single negative incident can rapidly unravel that confidence.</div>
+                <div class="finding-card"><strong>Bad actors are a primary trust disruptor.</strong> Low-trust users frequently pointed to encounters with fake profiles and scams as the root of their skepticism, extrapolating isolated incidents into a broader distrust of the platform.</div>
+                <div class="finding-card"><strong>Users want control but don't actively seek it.</strong> Participants expressed a strong desire to feel informed and in control of their data, yet few had sought out privacy settings or resources on their own.</div>
+                <div class="finding-card"><strong>Secondhand narratives carry significant weight.</strong> Media coverage shaped perceptions as much as direct experience — users who hadn't encountered problems themselves remained skeptical due to external narratives around TikTok.</div>
+                <div class="finding-card"><strong>TikTok feels impersonal compared to competitors.</strong> Users perceived TikTok as faceless relative to platforms associated with recognizable leadership figures, contributing to a sense of distance and reduced accountability.</div>
+                <div class="finding-card"><strong>The geopolitical context amplifies US-specific distrust.</strong> Concerns about foreign ownership and government data access were prominent among US participants, adding a layer of skepticism that extended beyond the platform's actual practices.</div>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <div class="project-section-title">Recommendations</div>
+              <div class="rec-grid">
+                <div class="rec-card">
+                  <div class="rec-number">01</div>
+                  <div>Respond to trust incidents proactively and transparently. When scams or bad actors surface, communicating what TikTok is doing — and keeping users informed throughout — can move low-trust users toward moderate trust.</div>
+                </div>
+                <div class="rec-card">
+                  <div class="rec-number">02</div>
+                  <div>Bring existing privacy initiatives to where users already are. Efforts like Project Texas and Oracle data storage partnerships are largely unknown to users. Amplifying these through creators, in-feed content, and marketing can close the awareness gap.</div>
+                </div>
+                <div class="rec-card">
+                  <div class="rec-number">03</div>
+                  <div>Humanize the brand through visible leadership. Associating a recognizable spokesperson with TikTok's trust and safety efforts can address the sense of facelessness that contributes to distrust.</div>
+                </div>
+                <div class="rec-card">
+                  <div class="rec-number">04</div>
+                  <div>Counter the negative media narrative with a US-specific transparency strategy. Given the geopolitical climate, US users need direct, factual communications about data storage and government access — not just general privacy messaging.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <!-- PLACEHOLDER for future projects -->
       <div class="project-card" style="opacity: 0.5; pointer-events: none;">
         <div class="project-header">
@@ -834,7 +1025,7 @@
         <div class="timeline-content">
           <div class="timeline-date">2025</div>
           <div class="timeline-heading"><svg class="milestone-icon" width="20" height="20"><use href="#icon-spark"/></svg><h4>User Researcher at TikTok</h4></div>
-          <p>Promoted to lead end-to-end research efforts for marketing and communications teams.</p>
+          <p>Leading end-to-end research efforts for product marketing and communications teams.</p>
         </div>
       </div>
 
@@ -872,7 +1063,7 @@
         <div class="timeline-content">
           <div class="timeline-date">2024</div>
           <span class="timeline-pub-badge">Publication</span>
-          <h4>Large language models, social demography, and hegemony: comparing authorship in human and synthetic text</h4>
+          <h4><a href="https://link.springer.com/article/10.1186/s40537-024-00986-7" target="_blank" rel="noopener">Large language models, social demography, and hegemony: comparing authorship in human and synthetic text</a></h4>
           <p>Alvero, A.J., Lee, J., <strong>Regla-Vargas, A.</strong>, Kizilcec, R.F., Joachims, T., &amp; Antonio, A.L. &nbsp;·&nbsp; <em>Journal of Big Data</em></p>
         </div>
       </div>
@@ -1052,13 +1243,68 @@
     document.getElementById('hamburger').classList.remove('open');
   }
 
-  // Project accordion
+  // Project accordion with password gate
+  const PW = 'reglaresearch';
+
   function toggleProject(header) {
     const card = header.closest('.project-card');
     const body = card.querySelector('.project-body');
     const toggle = card.querySelector('.project-toggle');
-    body.classList.toggle('open');
-    toggle.classList.toggle('open');
+
+    if (body.classList.contains('open')) {
+      body.classList.remove('open');
+      toggle.classList.remove('open');
+      return;
+    }
+
+    if (sessionStorage.getItem('portfolioUnlocked') === '1') {
+      body.classList.add('open');
+      toggle.classList.add('open');
+      return;
+    }
+
+    // Show gate inside the body
+    let gate = body.querySelector('.pw-gate');
+    if (!gate) {
+      gate = document.createElement('div');
+      gate.className = 'pw-gate';
+      gate.innerHTML = `
+        <div class="pw-gate-icon">🔒</div>
+        <div class="pw-gate-label">Password protected</div>
+        <p class="pw-gate-hint">These case studies contain proprietary research. Request the password when you reach out.</p>
+        <div class="pw-gate-row">
+          <input class="pw-gate-input" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter')submitPw(this)">
+          <button class="pw-gate-btn" onclick="submitPw(this.previousElementSibling)">Unlock</button>
+        </div>
+        <div class="pw-gate-error">Incorrect password — try again.</div>
+      `;
+      body.insertBefore(gate, body.firstChild);
+    }
+
+    body.classList.add('open');
+    toggle.classList.add('open');
+    setTimeout(() => gate.querySelector('.pw-gate-input').focus(), 300);
+  }
+
+  function submitPw(input) {
+    const body = input.closest('.project-body');
+    const toggle = body.closest('.project-card').querySelector('.project-toggle');
+    const errorEl = input.closest('.pw-gate').querySelector('.pw-gate-error');
+
+    if (input.value === PW) {
+      sessionStorage.setItem('portfolioUnlocked', '1');
+      // Remove all gates and fully open all cards that are open
+      document.querySelectorAll('.pw-gate').forEach(g => g.remove());
+      // Keep the current card open, close others
+      document.querySelectorAll('.project-body.open').forEach(b => {
+        if (b !== body) { b.classList.remove('open'); b.closest('.project-card').querySelector('.project-toggle').classList.remove('open'); }
+      });
+    } else {
+      input.classList.add('error');
+      errorEl.style.display = 'block';
+      input.value = '';
+      input.focus();
+    }
   }
 
   // Intersection observer for timeline
