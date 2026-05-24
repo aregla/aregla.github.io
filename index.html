@@ -107,44 +107,40 @@
     opacity: 0.4; pointer-events: none;
   }
   .hero-inner {
-    max-width: 700px; width: 100%;
-    display: flex; flex-direction: column;
-    align-items: center; text-align: center;
-    gap: 48px;
+    max-width: 1100px; width: 100%;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 64px; align-items: center;
     position: relative; z-index: 1;
   }
   .hero-text { animation: fadeUp 1s ease forwards; opacity: 0; }
-  .hero-greeting {
-    font-family: var(--font-display);
-    font-size: 1.8rem; font-weight: 500; font-style: italic;
-    color: var(--warm); margin-bottom: 12px;
-    letter-spacing: 0.02em;
-  }
+  .hero-greeting { display: none; }
   .hero-name {
     font-family: var(--font-display);
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    font-weight: 700; line-height: 1.1;
-    margin-bottom: 28px; color: var(--ink);
+    font-size: clamp(3.2rem, 6vw, 5.5rem);
+    font-weight: 700; line-height: 1.05;
+    color: var(--ink); margin-bottom: 0;
   }
   .hero-name .accent { color: var(--warm); }
+  .hero-divider {
+    width: 100%; height: 1.5px;
+    background: var(--light-border);
+    border: none; margin: 28px 0;
+  }
   .hero-title {
     font-size: 0.78rem; font-weight: 500;
     text-transform: uppercase; letter-spacing: 0.18em;
-    color: var(--muted); margin-bottom: 28px;
-    display: flex; align-items: center; justify-content: center; gap: 12px;
+    color: var(--muted); margin-bottom: 20px;
+    display: flex; align-items: center; gap: 12px;
   }
   .hero-title::before {
     content: ''; width: 32px; height: 1.5px; background: var(--warm);
   }
-  .hero-title::after {
-    content: ''; width: 32px; height: 1.5px; background: var(--warm);
-  }
   .hero-desc {
     font-size: 1.05rem; line-height: 1.8;
-    color: var(--muted); max-width: 500px; margin: 0 auto;
+    color: var(--muted); max-width: 520px;
   }
   .hero-links {
-    margin-top: 24px; display: flex; gap: 20px; align-items: center; justify-content: center;
+    margin-top: 28px; display: flex; gap: 20px; align-items: center;
   }
   .hero-links a {
     font-size: 0.82rem; color: var(--warm); text-decoration: none;
@@ -159,7 +155,7 @@
     animation: fadeUp 1s 0.2s ease forwards; opacity: 0;
   }
   .hero-image-container {
-    position: relative; width: 320px; height: 320px;
+    position: relative; width: 260px; height: 260px;
   }
   .hero-image-container::before {
     content: ''; position: absolute;
@@ -571,10 +567,11 @@
 
   /* RESPONSIVE */
   @media (max-width: 900px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
     .hero-desc { margin: 0 auto; }
     .hero-title { justify-content: center; }
     .hero-links { justify-content: center; }
+    .hero-image-wrapper { order: -1; }
     .hero-image-container { width: 260px; height: 260px; margin: 0 auto; }
     .about-grid { grid-template-columns: 1fr; }
     .expertise-items { grid-template-columns: 1fr; }
@@ -662,7 +659,8 @@
   <div class="hero-inner">
     <div class="hero-text">
       <div class="hero-greeting">Hi! I'm Alejandra.</div>
-      <h1 class="hero-name">User<br><span class="accent">Researcher</span></h1>
+      <h1 class="hero-name">Alejandra<br>Regla<span class="accent">,</span> Ph.D.</h1>
+      <hr class="hero-divider">
       <div class="hero-title">User Researcher · TikTok</div>
       <p class="hero-desc">
         I lead research efforts for marketing and communications teams — equipping them with the insights they need to make informed, user-centered decisions.
