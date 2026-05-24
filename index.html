@@ -286,7 +286,9 @@
   .project-content {
     padding: 0 40px 40px;
     border-top: 1px solid var(--light-border);
+    display: none;
   }
+  .project-body.unlocked .project-content { display: block; }
   .project-section {
     padding-top: 32px;
   }
@@ -1235,6 +1237,15 @@
   // Project accordion with password gate
   const PW = 'reglaresearch';
 
+  function unlockAll() {
+    sessionStorage.setItem('portfolioUnlocked', '1');
+    document.querySelectorAll('.project-body').forEach(b => b.classList.add('unlocked'));
+    document.querySelectorAll('.pw-gate').forEach(g => g.remove());
+  }
+
+  // Restore unlock state on page load
+  if (sessionStorage.getItem('portfolioUnlocked') === '1') unlockAll();
+
   function toggleProject(header) {
     const card = header.closest('.project-card');
     const body = card.querySelector('.project-body');
@@ -1247,12 +1258,12 @@
     }
 
     if (sessionStorage.getItem('portfolioUnlocked') === '1') {
-      body.classList.add('open');
+      body.classList.add('open', 'unlocked');
       toggle.classList.add('open');
       return;
     }
 
-    // Show gate inside the body
+    // Show gate, content stays hidden
     let gate = body.querySelector('.pw-gate');
     if (!gate) {
       gate = document.createElement('div');
@@ -1276,18 +1287,9 @@
   }
 
   function submitPw(input) {
-    const body = input.closest('.project-body');
-    const toggle = body.closest('.project-card').querySelector('.project-toggle');
     const errorEl = input.closest('.pw-gate').querySelector('.pw-gate-error');
-
     if (input.value === PW) {
-      sessionStorage.setItem('portfolioUnlocked', '1');
-      // Remove all gates and fully open all cards that are open
-      document.querySelectorAll('.pw-gate').forEach(g => g.remove());
-      // Keep the current card open, close others
-      document.querySelectorAll('.project-body.open').forEach(b => {
-        if (b !== body) { b.classList.remove('open'); b.closest('.project-card').querySelector('.project-toggle').classList.remove('open'); }
-      });
+      unlockAll();
     } else {
       input.classList.add('error');
       errorEl.style.display = 'block';
