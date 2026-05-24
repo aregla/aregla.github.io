@@ -449,16 +449,29 @@
     position: relative; margin-bottom: 40px;
     opacity: 0; animation: fadeUp 0.6s ease forwards;
   }
-  .timeline-item:nth-child(1) { animation-delay: 0.1s; }
-  .timeline-item:nth-child(2) { animation-delay: 0.2s; }
-  .timeline-item:nth-child(3) { animation-delay: 0.3s; }
-  .timeline-item:nth-child(4) { animation-delay: 0.4s; }
-  .timeline-item:nth-child(5) { animation-delay: 0.5s; }
-  .timeline-item:nth-child(6) { animation-delay: 0.6s; }
-  .timeline-item:nth-child(7) { animation-delay: 0.7s; }
-  .timeline-item:nth-child(8) { animation-delay: 0.8s; }
-  .timeline-item:nth-child(9) { animation-delay: 0.9s; }
+  .timeline-item:nth-child(1)  { animation-delay: 0.1s; }
+  .timeline-item:nth-child(2)  { animation-delay: 0.2s; }
+  .timeline-item:nth-child(3)  { animation-delay: 0.3s; }
+  .timeline-item:nth-child(4)  { animation-delay: 0.4s; }
+  .timeline-item:nth-child(5)  { animation-delay: 0.5s; }
+  .timeline-item:nth-child(6)  { animation-delay: 0.6s; }
+  .timeline-item:nth-child(7)  { animation-delay: 0.7s; }
+  .timeline-item:nth-child(8)  { animation-delay: 0.8s; }
+  .timeline-item:nth-child(9)  { animation-delay: 0.9s; }
   .timeline-item:nth-child(10) { animation-delay: 1.0s; }
+  .timeline-item:nth-child(11) { animation-delay: 1.1s; }
+  .timeline-item:nth-child(12) { animation-delay: 1.2s; }
+  .timeline-item:nth-child(13) { animation-delay: 1.3s; }
+  .timeline-item:nth-child(14) { animation-delay: 1.4s; }
+  .timeline-item:nth-child(15) { animation-delay: 1.5s; }
+  .timeline-item:nth-child(16) { animation-delay: 1.6s; }
+  .timeline-item:nth-child(17) { animation-delay: 1.7s; }
+  .timeline-pub-badge {
+    display: inline-block; font-size: 0.65rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--sage); background: var(--sage-light);
+    padding: 3px 10px; border-radius: 3px; margin-bottom: 8px;
+  }
   .timeline-dot {
     position: absolute; left: -44px; top: 6px;
     width: 15px; height: 15px; border-radius: 50%;
@@ -562,8 +575,6 @@
       <li><a href="#home" class="active" onclick="closeNav()">Home</a></li>
       <li><a href="#about" onclick="closeNav()">About</a></li>
       <li><a href="#portfolio" onclick="closeNav()">Portfolio</a></li>
-      <li><a href="#publications" onclick="closeNav()">Publications</a></li>
-      <li><a href="#expertise" onclick="closeNav()">Expertise</a></li>
       <li><a href="#updates" onclick="closeNav()">Updates</a></li>
       <li><a href="#contact" onclick="closeNav()">Contact</a></li>
     </ul>
@@ -719,176 +730,23 @@
   </div>
 </section>
 
-<!-- PUBLICATIONS -->
-<section class="publications" id="publications" style="position:relative">
-  <span class="research-float" style="top:6%;right:3%;transform:rotate(10deg)">💡</span>
-  <div class="publications-inner">
-    <div class="section-label">Publications</div>
-    <h2 class="section-heading">Research &amp; writing</h2>
-    <div class="pub-list">
-
-      <div class="pub-year-group">
-        <div class="pub-year">2026</div>
-        <div class="pub-items">
-          <div class="pub-item">
-            <div class="pub-title"><a href="https://journals.sagepub.com/doi/full/10.1177/20539517261424160" target="_blank" rel="noopener">Racial framing contests: How anti-Asian racism and its resistance enacted racial projects during COVID-19</a></div>
-            <div class="pub-meta"><strong>Regla-Vargas, A.</strong>, Alvero, A.J., &amp; Yazdiha, H. &nbsp;·&nbsp; <span class="pub-venue">Big Data &amp; Society</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub-year-group">
-        <div class="pub-year">2025</div>
-        <div class="pub-items">
-          <div class="pub-item">
-            <div class="pub-title">PrimateFace: A Machine Learning Resource for Automated Face Analysis in Human and Non-human Primates</div>
-            <div class="pub-meta">Parodi, F., Matelsky, J.K., Lamacchia, A.P., Segado, M., Jiang, Y., <strong>Regla-Vargas, A.</strong>, et al. &nbsp;·&nbsp; <span class="pub-venue">bioRxiv</span></div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-title">PrimateFace: A Resource for Generalizable Cross-Species Facial Analysis</div>
-            <div class="pub-meta">Parodi, F., Matelsky, J.K., Lamacchia, A.P., Segado, M., Jiang, Y., <strong>Regla-Vargas, A.</strong>, et al. &nbsp;·&nbsp; <span class="pub-venue">NeurIPS 2025 Workshop on Foundation Models for the Brain and Body</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub-year-group">
-        <div class="pub-year">2024</div>
-        <div class="pub-items">
-          <div class="pub-item">
-            <div class="pub-title">Large language models, social demography, and hegemony: comparing authorship in human and synthetic text</div>
-            <div class="pub-meta">Alvero, A.J., Lee, J., <strong>Regla-Vargas, A.</strong>, Kizilcec, R.F., Joachims, T., &amp; Antonio, A.L. &nbsp;·&nbsp; <span class="pub-venue">Journal of Big Data</span></div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-title">Vision-language models for decoding provider attention during neonatal resuscitation</div>
-            <div class="pub-meta">Parodi, F., Matelsky, J.K., <strong>Regla-Vargas, A.</strong>, Foglia, E.E., Lim, C., Weinberg, D., et al. &nbsp;·&nbsp; <span class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub-year-group">
-        <div class="pub-year">2023</div>
-        <div class="pub-items">
-          <div class="pub-item">
-            <div class="pub-title">Conceptualizations of race: Essentialism and constructivism</div>
-            <div class="pub-meta">Roth, W.D., Van Stee, E.G., &amp; <strong>Regla-Vargas, A.</strong> &nbsp;·&nbsp; <span class="pub-venue">Annual Review of Sociology</span></div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-title">The BTS Effect: How K-Pop Fandoms Reshape Sociopolitical Messaging on Twitter</div>
-            <div class="pub-meta"><strong>Regla-Vargas, A.</strong>, Alvero, A.J., &amp; Kao, G. &nbsp;·&nbsp; <span class="pub-venue">OSF</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub-year-group">
-        <div class="pub-year">2020</div>
-        <div class="pub-items">
-          <div class="pub-item">
-            <div class="pub-title">Contributions of historically Black colleges and universities to the production of Black nurses</div>
-            <div class="pub-meta">Gasman, M., <strong>Regla-Vargas, A.</strong>, Sandoval, C., Samayoa, A.C., &amp; Nguyen, T.H. &nbsp;·&nbsp; <span class="pub-venue">Journal of Nursing Education</span></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-<section class="expertise" id="expertise" style="position:relative">
-  <span class="research-float" style="top:10%;left:2%;transform:rotate(8deg)">💡</span>
-  <div class="expertise-inner">
-    <div class="section-label">Expertise</div>
-    <h2 class="section-heading">Research methods &amp; skills</h2>
-    <div class="expertise-items">
-      <div class="expertise-item">
-        <div class="expertise-dot"></div>
-        <div>
-          <h4>In-Depth Interviews</h4>
-          <p>1:1 and group interviews to uncover motivations, mental models, and unmet needs.</p>
-        </div>
-      </div>
-      <div class="expertise-item">
-        <div class="expertise-dot"></div>
-        <div>
-          <h4>Survey Design &amp; Analysis</h4>
-          <p>End-to-end survey research — from instrument design to statistical analysis and reporting.</p>
-        </div>
-      </div>
-      <div class="expertise-item">
-        <div class="expertise-dot"></div>
-        <div>
-          <h4>Usability Testing</h4>
-          <p>Evaluating products with real users to identify friction points and improve the experience.</p>
-        </div>
-      </div>
-      <div class="expertise-item">
-        <div class="expertise-dot"></div>
-        <div>
-          <h4>Focus Groups</h4>
-          <p>Facilitated group discussions to explore shared experiences and surface collective patterns.</p>
-        </div>
-      </div>
-      <div class="expertise-item">
-        <div class="expertise-dot"></div>
-        <div>
-          <h4>Text Analysis</h4>
-          <p>Computational text analysis and NLP techniques for extracting patterns from large-scale qualitative data.</p>
-        </div>
-      </div>
-      <div class="expertise-item">
-        <div class="expertise-dot"></div>
-        <div>
-          <h4>Statistics &amp; Modeling</h4>
-          <p>Descriptive and inferential statistics, linear and logistic regression, grounded in a Master's-level foundation.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SKILLS BAR -->
-    <div class="skills-bar">
-      <h3>Tools &amp; Languages</h3>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">R</span>
-            <span class="skill-tag">STATA</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Platforms</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">Qualtrics</span>
-            <span class="skill-tag">UserTesting</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Methods</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">Linear Regression</span>
-            <span class="skill-tag">Logistic Regression</span>
-            <span class="skill-tag">Inferential Stats</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- TIMELINE / UPDATES -->
 <section class="timeline-section" id="updates">
   <div class="timeline-inner">
     <div class="section-label">Updates</div>
     <h2 class="section-heading">Journey &amp; milestones</h2>
     <div class="timeline">
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">March 2026</div>
-          <h4>Published in Big Data &amp; Society</h4>
-          <p>Co-authored <a href="https://journals.sagepub.com/doi/full/10.1177/20539517261424160" target="_blank" rel="noopener">"Racial framing contests: How anti-Asian racism and its resistance enacted racial projects during COVID-19."</a></p>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4><a href="https://journals.sagepub.com/doi/full/10.1177/20539517261424160" target="_blank" rel="noopener">Racial framing contests: How anti-Asian racism and its resistance enacted racial projects during COVID-19</a></h4>
+          <p><strong>Regla-Vargas, A.</strong>, Alvero, A.J., &amp; Yazdiha, H. &nbsp;·&nbsp; <em>Big Data &amp; Society</em></p>
         </div>
       </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -897,14 +755,27 @@
           <p>Promoted to lead end-to-end research efforts for marketing and communications teams.</p>
         </div>
       </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <div class="timeline-date">2023 – 2025</div>
-          <h4>UX Researcher at TikTok USDS</h4>
-          <p>Led end-to-end research for product, policy, and marketing teams.</p>
+          <div class="timeline-date">2025</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>PrimateFace: A Machine Learning Resource for Automated Face Analysis in Human and Non-human Primates</h4>
+          <p>Parodi, F., Matelsky, J.K., Lamacchia, A.P., Segado, M., Jiang, Y., <strong>Regla-Vargas, A.</strong>, et al. &nbsp;·&nbsp; <em>bioRxiv</em></p>
         </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>PrimateFace: A Resource for Generalizable Cross-Species Facial Analysis</h4>
+          <p>Parodi, F., Matelsky, J.K., Lamacchia, A.P., Segado, M., Jiang, Y., <strong>Regla-Vargas, A.</strong>, et al. &nbsp;·&nbsp; <em>NeurIPS 2025 Workshop on Foundation Models for the Brain and Body</em></p>
+        </div>
+      </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -913,6 +784,56 @@
           <p>Successfully defended my dissertation in the Department of Sociology at the University of Pennsylvania.</p>
         </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>Large language models, social demography, and hegemony: comparing authorship in human and synthetic text</h4>
+          <p>Alvero, A.J., Lee, J., <strong>Regla-Vargas, A.</strong>, Kizilcec, R.F., Joachims, T., &amp; Antonio, A.L. &nbsp;·&nbsp; <em>Journal of Big Data</em></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>Vision-language models for decoding provider attention during neonatal resuscitation</h4>
+          <p>Parodi, F., Matelsky, J.K., <strong>Regla-Vargas, A.</strong>, Foglia, E.E., Lim, C., Weinberg, D., et al. &nbsp;·&nbsp; <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2023 – 2025</div>
+          <h4>UX Researcher at TikTok USDS</h4>
+          <p>Led end-to-end research for product, policy, and marketing teams.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2023</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>Conceptualizations of race: Essentialism and constructivism</h4>
+          <p>Roth, W.D., Van Stee, E.G., &amp; <strong>Regla-Vargas, A.</strong> &nbsp;·&nbsp; <em>Annual Review of Sociology</em></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2023</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>The BTS Effect: How K-Pop Fandoms Reshape Sociopolitical Messaging on Twitter</h4>
+          <p><strong>Regla-Vargas, A.</strong>, Alvero, A.J., &amp; Kao, G. &nbsp;·&nbsp; <em>OSF</em></p>
+        </div>
+      </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -921,6 +842,7 @@
           <p>Co-hosted the <a href="https://sicss.io/2022/penn/people" target="_blank" rel="noopener">Summer Institute in Computational Methods at UPenn</a> and taught a workshop on Text Analysis.</p>
         </div>
       </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -929,6 +851,17 @@
           <p>Earned a Master's degree at The Wharton School, University of Pennsylvania.</p>
         </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2020</div>
+          <span class="timeline-pub-badge">Publication</span>
+          <h4>Contributions of historically Black colleges and universities to the production of Black nurses</h4>
+          <p>Gasman, M., <strong>Regla-Vargas, A.</strong>, Sandoval, C., Samayoa, A.C., &amp; Nguyen, T.H. &nbsp;·&nbsp; <em>Journal of Nursing Education</em></p>
+        </div>
+      </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -937,6 +870,7 @@
           <p>Completed doctoral studies in the Department of Sociology at the University of Pennsylvania.</p>
         </div>
       </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -945,6 +879,7 @@
           <p>Earned my Bachelor of Arts in History from California State University, Dominguez Hills.</p>
         </div>
       </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -953,6 +888,7 @@
           <p>Completed a summer undergraduate research internship at the University of Pennsylvania.</p>
         </div>
       </div>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -961,6 +897,7 @@
           <p>Completed a summer undergraduate research internship at Stanford University.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
