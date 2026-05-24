@@ -179,7 +179,7 @@
   }
 
   /* SECTIONS */
-  section { padding: 100px 40px; }
+  section { padding: 60px 40px; }
   .section-label {
     font-size: 0.72rem; font-weight: 600;
     text-transform: uppercase; letter-spacing: 0.2em;
@@ -487,6 +487,19 @@
   .milestones-toggle.open { transform: rotate(45deg); background: var(--warm); color: white; }
   .milestones-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
   .milestones-body.open { max-height: 6000px; }
+  .timeline-tabs {
+    display: flex; gap: 8px; flex-wrap: wrap; margin: 28px 0 8px;
+  }
+  .timeline-tab {
+    font-size: 0.72rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    padding: 7px 18px; border-radius: 20px;
+    border: 1.5px solid var(--warm-light);
+    background: transparent; color: var(--muted);
+    cursor: pointer; transition: all 0.25s;
+  }
+  .timeline-tab:hover { border-color: var(--warm); color: var(--ink); }
+  .timeline-tab.active { background: var(--warm); border-color: var(--warm); color: white; }
 
   .timeline-pub-badge {
     display: inline-block; font-size: 0.65rem; font-weight: 600;
@@ -800,9 +813,15 @@
       <button class="milestones-toggle open" id="milestonesToggle" aria-label="Toggle milestones">+</button>
     </div>
     <div class="milestones-body open" id="milestonesBody">
-    <div class="timeline" style="margin-top:48px">
+    <div class="timeline-tabs">
+      <button class="timeline-tab active" onclick="filterTimeline('all', this)">All</button>
+      <button class="timeline-tab" onclick="filterTimeline('publications', this)">Publications</button>
+      <button class="timeline-tab" onclick="filterTimeline('career', this)">Career</button>
+      <button class="timeline-tab" onclick="filterTimeline('education', this)">Education</button>
+    </div>
+    <div class="timeline" style="margin-top:24px">
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">March 2026</div>
@@ -812,7 +831,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="career">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2025</div>
@@ -821,7 +840,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2025</div>
@@ -831,7 +850,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2025</div>
@@ -841,7 +860,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="education">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">February 2024</div>
@@ -850,7 +869,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2024</div>
@@ -860,7 +879,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2024</div>
@@ -870,7 +889,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="career">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2023 – 2025</div>
@@ -879,7 +898,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2023</div>
@@ -889,7 +908,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2023</div>
@@ -899,7 +918,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="career">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">August 2022</div>
@@ -908,7 +927,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="education">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2020 – 2022</div>
@@ -917,7 +936,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="publications">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2020</div>
@@ -927,7 +946,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="education">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2018 – 2025</div>
@@ -936,7 +955,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="career">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">Summer 2018</div>
@@ -945,7 +964,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="education">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">May 2018</div>
@@ -954,7 +973,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="career">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2017</div>
@@ -963,7 +982,7 @@
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-category="career">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2016</div>
@@ -1009,6 +1028,15 @@
       if (a.getAttribute('href') === '#' + current) a.classList.add('active');
     });
   });
+
+  // Timeline tab filter
+  function filterTimeline(category, el) {
+    document.querySelectorAll('.timeline-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    document.querySelectorAll('.timeline-item').forEach(item => {
+      item.style.display = (category === 'all' || item.dataset.category === category) ? '' : 'none';
+    });
+  }
 
   // Milestones toggle
   function toggleMilestones() {
