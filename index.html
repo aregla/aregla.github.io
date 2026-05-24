@@ -483,10 +483,15 @@
     text-transform: uppercase; letter-spacing: 0.15em;
     color: var(--warm); margin-bottom: 6px;
   }
+  .timeline-heading {
+    display: flex; align-items: flex-start; gap: 9px; margin-bottom: 6px;
+  }
+  .milestone-icon { color: var(--warm); flex-shrink: 0; margin-top: 2px; opacity: 0.85; }
   .timeline-content h4 {
     font-family: var(--font-display);
     font-size: 1.1rem; font-weight: 600; margin-bottom: 6px;
   }
+  .timeline-heading h4 { margin-bottom: 0; }
   .timeline-content p {
     font-size: 0.9rem; color: var(--muted); line-height: 1.7;
   }
@@ -566,6 +571,38 @@
 </style>
 </head>
 <body>
+
+<!-- ICON DEFS -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <!-- spark: radiating lines + center circle (jobs/career) -->
+  <symbol id="icon-spark" viewBox="0 0 20 20">
+    <line x1="10" y1="1" x2="10" y2="4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="10" y1="15.5" x2="10" y2="19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="1" y1="10" x2="4.5" y2="10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="15.5" y1="10" x2="19" y2="10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="3.5" y1="3.5" x2="6" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="14" y1="14" x2="16.5" y2="16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="16.5" y1="3.5" x2="14" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="6" y1="14" x2="3.5" y2="16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="10" cy="10" r="2" stroke="currentColor" stroke-width="1.4" fill="none"/>
+  </symbol>
+  <!-- star burst: wobbly 5-point star + tiny sparkles (dissertation) -->
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <path d="M12 2 L13.9 8.8 L21 8.2 L15.6 13 L17.7 20 L12 16.2 L6.3 20 L8.4 13 L3 8.2 L10.1 8.8 Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="20" y1="2" x2="20" y2="4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="19" y1="3" x2="21" y2="3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="3" y1="21" x2="3" y2="23" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="2" y1="22" x2="4" y2="22" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+  <!-- scroll: diploma with ribbon (degrees) -->
+  <symbol id="icon-scroll" viewBox="0 0 22 22">
+    <path d="M3 5 Q3 3 5.5 3 L16.5 3 Q19 3 19 5 L19 16 Q19 18 16.5 18 L5.5 18 Q3 18 3 16 Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M3 7 Q11 5 19 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <line x1="7" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <line x1="7" y1="14" x2="12.5" y2="14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M9 18 L10.5 21.5 L11 20.5 L11.5 21.5 L13 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+</svg>
 
 <!-- NAV -->
 <nav id="nav">
@@ -751,7 +788,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2025</div>
-          <h4>User Researcher at TikTok</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="20" height="20"><use href="#icon-spark"/></svg><h4>User Researcher at TikTok</h4></div>
           <p>Promoted to lead end-to-end research efforts for marketing and communications teams.</p>
         </div>
       </div>
@@ -780,7 +817,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">February 2024</div>
-          <h4>Dissertation Defended</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="24" height="24"><use href="#icon-star"/></svg><h4>Dissertation Defended</h4></div>
           <p>Successfully defended my dissertation in the Department of Sociology at the University of Pennsylvania.</p>
         </div>
       </div>
@@ -809,7 +846,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2023 – 2025</div>
-          <h4>UX Researcher at TikTok USDS</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="20" height="20"><use href="#icon-spark"/></svg><h4>UX Researcher at TikTok USDS</h4></div>
           <p>Led end-to-end research for product, policy, and marketing teams.</p>
         </div>
       </div>
@@ -838,7 +875,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">August 2022</div>
-          <h4>SICSS at UPenn</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="20" height="20"><use href="#icon-spark"/></svg><h4>SICSS at UPenn</h4></div>
           <p>Co-hosted the <a href="https://sicss.io/2022/penn/people" target="_blank" rel="noopener">Summer Institute in Computational Methods at UPenn</a> and taught a workshop on Text Analysis.</p>
         </div>
       </div>
@@ -847,7 +884,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2020 – 2022</div>
-          <h4>A.M. in Data Science &amp; Statistics</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="22" height="22"><use href="#icon-scroll"/></svg><h4>A.M. in Data Science &amp; Statistics</h4></div>
           <p>Earned a Master's degree at The Wharton School, University of Pennsylvania.</p>
         </div>
       </div>
@@ -866,7 +903,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2018 – 2025</div>
-          <h4>Ph.D. in Sociology at UPenn</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="22" height="22"><use href="#icon-scroll"/></svg><h4>Ph.D. in Sociology at UPenn</h4></div>
           <p>Completed doctoral studies in the Department of Sociology at the University of Pennsylvania.</p>
         </div>
       </div>
@@ -875,7 +912,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">May 2018</div>
-          <h4>B.A. in History</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="22" height="22"><use href="#icon-scroll"/></svg><h4>B.A. in History</h4></div>
           <p>Earned my Bachelor of Arts in History from California State University, Dominguez Hills.</p>
         </div>
       </div>
@@ -884,7 +921,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2017</div>
-          <h4>Research Internship — UPenn</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="20" height="20"><use href="#icon-spark"/></svg><h4>Research Internship — UPenn</h4></div>
           <p>Completed a summer undergraduate research internship at the University of Pennsylvania.</p>
         </div>
       </div>
@@ -893,7 +930,7 @@
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">2016</div>
-          <h4>Research Internship — Stanford</h4>
+          <div class="timeline-heading"><svg class="milestone-icon" width="20" height="20"><use href="#icon-spark"/></svg><h4>Research Internship — Stanford</h4></div>
           <p>Completed a summer undergraduate research internship at Stanford University.</p>
         </div>
       </div>
