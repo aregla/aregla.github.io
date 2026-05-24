@@ -155,17 +155,23 @@
     animation: fadeUp 1s 0.2s ease forwards; opacity: 0;
   }
   .hero-image-container {
-    position: relative; width: 340px; height: 400px;
+    position: relative; width: 320px; height: 320px;
   }
   .hero-image-container::before {
     content: ''; position: absolute;
-    top: -12px; right: -12px; bottom: 12px; left: 12px;
-    border: 1.5px solid var(--warm-light); border-radius: 4px;
+    top: -14px; right: -14px; bottom: -14px; left: -14px;
+    border: 1.5px solid var(--warm-light); border-radius: 50%;
   }
   .hero-image {
     width: 100%; height: 100%; object-fit: cover;
-    border-radius: 4px; position: relative; z-index: 1;
+    border-radius: 50%; position: relative; z-index: 1;
     filter: grayscale(10%) contrast(1.02);
+  }
+
+  /* RESEARCH ARTIFACTS */
+  .research-float {
+    position: absolute; pointer-events: none; user-select: none;
+    font-size: 96px; opacity: 0.045; line-height: 1; z-index: 0;
   }
 
   /* SECTIONS */
@@ -488,7 +494,7 @@
     .hero-desc { margin: 0 auto; }
     .hero-title { justify-content: center; }
     .hero-links { justify-content: center; }
-    .hero-image-container { width: 280px; height: 340px; margin: 0 auto; }
+    .hero-image-container { width: 260px; height: 260px; margin: 0 auto; }
     .about-grid { grid-template-columns: 1fr; }
     .expertise-items { grid-template-columns: 1fr; }
     .findings-grid { grid-template-columns: 1fr; }
@@ -540,6 +546,7 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <span class="research-float" style="bottom:12%;left:5%;transform:rotate(-15deg)">🔍</span>
   <div class="hero-inner">
     <div class="hero-text">
       <div class="hero-greeting">Hi! I'm Alejandra.</div>
@@ -563,23 +570,24 @@
 </section>
 
 <!-- ABOUT -->
-<section class="about" id="about">
+<section class="about" id="about" style="position:relative">
+  <span class="research-float" style="top:8%;right:4%;transform:rotate(12deg)">💡</span>
   <div class="about-inner">
     <div class="section-label">About</div>
     <h2 class="section-heading">Research that drives<br>meaningful decisions</h2>
     <div class="about-grid">
       <div class="about-card">
-        <div class="about-card-icon">✦</div>
+        <div class="about-card-icon">🔍</div>
         <h3>Mixed Methods</h3>
         <p>My work spans both quantitative and qualitative approaches — surveys, 1:1 interviews, focus groups, usability tests, text analysis, and more.</p>
       </div>
       <div class="about-card">
-        <div class="about-card-icon">◎</div>
+        <div class="about-card-icon">💡</div>
         <h3>User-Centered</h3>
         <p>I'm passionate about centering users in every decision. I surface the insights that help product, marketing, and policy teams make research-backed calls.</p>
       </div>
       <div class="about-card">
-        <div class="about-card-icon">◈</div>
+        <div class="about-card-icon">🎓</div>
         <h3>Academic Rigor</h3>
         <p>Ph.D. in Sociology and A.M. in Data Science &amp; Statistics from the University of Pennsylvania. B.A. in History from CSU Dominguez Hills.</p>
       </div>
@@ -588,7 +596,8 @@
 </section>
 
 <!-- PORTFOLIO -->
-<section class="portfolio" id="portfolio">
+<section class="portfolio" id="portfolio" style="position:relative">
+  <span class="research-float" style="bottom:6%;right:3%;transform:rotate(-10deg)">🔍</span>
   <div class="portfolio-inner">
     <div class="section-label">Portfolio</div>
     <h2 class="section-heading">Selected research projects</h2>
@@ -682,7 +691,8 @@
 </section>
 
 <!-- EXPERTISE -->
-<section class="expertise" id="expertise">
+<section class="expertise" id="expertise" style="position:relative">
+  <span class="research-float" style="top:10%;left:2%;transform:rotate(8deg)">💡</span>
   <div class="expertise-inner">
     <div class="section-label">Expertise</div>
     <h2 class="section-heading">Research methods &amp; skills</h2>
