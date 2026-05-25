@@ -286,9 +286,7 @@
   .project-content {
     padding: 0 40px 40px;
     border-top: 1px solid var(--light-border);
-    display: none;
   }
-  .project-body.unlocked .project-content { display: block; }
   .project-section {
     padding-top: 32px;
   }
@@ -561,50 +559,6 @@
     font-size: 0.78rem; color: var(--muted); letter-spacing: 0.04em;
   }
 
-  /* PASSWORD GATE */
-  .pw-gate {
-    padding: 40px;
-    border-top: 1px solid var(--light-border);
-    display: flex; flex-direction: column; align-items: center;
-    gap: 16px; text-align: center;
-  }
-  .pw-gate-icon {
-    width: 48px; height: 48px; border-radius: 50%;
-    background: var(--warm-pale); color: var(--warm);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.3rem;
-  }
-  .pw-gate-label {
-    font-family: var(--font-display);
-    font-size: 1.15rem; font-weight: 600; color: var(--ink);
-  }
-  .pw-gate-hint {
-    font-size: 0.85rem; color: var(--muted); max-width: 320px; line-height: 1.6;
-  }
-  .pw-gate-row {
-    display: flex; gap: 10px; align-items: center; margin-top: 4px;
-  }
-  .pw-gate-input {
-    font-family: var(--font-body); font-size: 0.9rem;
-    padding: 10px 16px; border-radius: 4px;
-    border: 1.5px solid var(--warm-light);
-    background: white; color: var(--ink);
-    outline: none; transition: border-color 0.2s;
-    width: 200px;
-  }
-  .pw-gate-input:focus { border-color: var(--warm); }
-  .pw-gate-input.error { border-color: #c0392b; }
-  .pw-gate-btn {
-    font-family: var(--font-body); font-size: 0.85rem; font-weight: 500;
-    padding: 10px 20px; border-radius: 4px;
-    background: var(--warm); color: white; border: none;
-    cursor: pointer; transition: background 0.2s; white-space: nowrap;
-  }
-  .pw-gate-btn:hover { background: var(--ink); }
-  .pw-gate-error {
-    font-size: 0.8rem; color: #c0392b; display: none;
-  }
-
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
@@ -801,23 +755,6 @@
               <p>A key methodological decision was recruiting both users and non-users — this allowed me to distinguish between attitudes toward AI as a technology versus attitudes toward AI as implemented on the platform specifically. By separating these two frames, the findings could speak directly to communications and messaging strategy rather than product development alone. Insights were synthesized into a framework that mapped user mental models onto concrete messaging implications for cross-functional stakeholders.</p>
             </div>
 
-            <div class="project-section">
-              <div class="project-section-title">Recommendations</div>
-              <div class="rec-grid">
-                <div class="rec-card">
-                  <div class="rec-number">01</div>
-                  <div>Lead with utility, not technology. Messaging should use plain language that centers what the tool does for the user — not how it works underneath.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">02</div>
-                  <div>Position AI features as experience enhancers, not disruptors — tools that work with existing user behaviors rather than changing them.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">03</div>
-                  <div>Address accuracy concerns proactively. Since trust in AI hinges on reliability, communications should set clear expectations about what the tools can and cannot do.</div>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -866,23 +803,6 @@
               <p>The benchmark's value came as much from its design as its findings. I structured the 16 attitudinal items to map directly onto existing cross-functional workstreams — meaning each team could see a measure that reflected their area of responsibility. This design choice made the tracker immediately actionable and helped build internal buy-in. Regional sampling was calibrated to reflect each market's user composition, enabling meaningful cross-market comparisons. I also built in trend analysis across quarters to track whether trust was moving in response to platform events or team efforts.</p>
             </div>
 
-            <div class="project-section">
-              <div class="project-section-title">Recommendations</div>
-              <div class="rec-grid">
-                <div class="rec-card">
-                  <div class="rec-number">01</div>
-                  <div>Prioritize the lowest-scoring attitudinal dimensions in trust-building campaigns — these represent the largest gaps between user expectations and platform perception.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">02</div>
-                  <div>Develop region-specific messaging strategies that reflect local trust profiles rather than applying a single global approach.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">03</div>
-                  <div>Leverage high-scoring trust dimensions as entry points for communications — establishing credibility in areas of strength before addressing areas of concern.</div>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -931,27 +851,6 @@
               <p>The key methodological contribution of this study was its purposive sampling strategy — by recruiting directly from the low end of the trust spectrum and using the benchmark's own attitudinal items as screener criteria, I created a direct bridge between the quantitative and qualitative phases. This mixed-methods design allowed the qualitative findings to explain the quantitative patterns rather than simply illustrate them. Analysis focused on distinguishing firsthand experiences from secondhand narratives, which revealed that media coverage and cultural context were shaping perceptions as much as direct platform use.</p>
             </div>
 
-            <div class="project-section">
-              <div class="project-section-title">Recommendations</div>
-              <div class="rec-grid">
-                <div class="rec-card">
-                  <div class="rec-number">01</div>
-                  <div>Respond to trust incidents proactively. Users who encounter bad actors extrapolate those experiences broadly — timely, transparent responses can interrupt that pattern before distrust compounds.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">02</div>
-                  <div>Make existing privacy efforts visible and accessible. Users expressed a desire to feel informed but weren't actively seeking out information — meeting them where they are requires proactive, in-product communication.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">03</div>
-                  <div>Humanize platform leadership. Users perceived the platform as faceless compared to competitors — associating visible, accountable leadership with trust and safety efforts can reduce that distance.</div>
-                </div>
-                <div class="rec-card">
-                  <div class="rec-number">04</div>
-                  <div>Develop market-specific messaging that accounts for the media and geopolitical context users are embedded in — general privacy messaging is insufficient where distrust is shaped by external narratives.</div>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -1214,68 +1113,13 @@
     document.getElementById('hamburger').classList.remove('open');
   }
 
-  // Project accordion with password gate
-  const PW = 'reglaresearch';
-
-  function unlockAll() {
-    sessionStorage.setItem('portfolioUnlocked', '1');
-    document.querySelectorAll('.project-body').forEach(b => b.classList.add('unlocked'));
-    document.querySelectorAll('.pw-gate').forEach(g => g.remove());
-  }
-
-  // Restore unlock state on page load
-  if (sessionStorage.getItem('portfolioUnlocked') === '1') unlockAll();
-
+  // Project accordion
   function toggleProject(header) {
     const card = header.closest('.project-card');
     const body = card.querySelector('.project-body');
     const toggle = card.querySelector('.project-toggle');
-
-    if (body.classList.contains('open')) {
-      body.classList.remove('open');
-      toggle.classList.remove('open');
-      return;
-    }
-
-    if (sessionStorage.getItem('portfolioUnlocked') === '1') {
-      body.classList.add('open', 'unlocked');
-      toggle.classList.add('open');
-      return;
-    }
-
-    // Show gate, content stays hidden
-    let gate = body.querySelector('.pw-gate');
-    if (!gate) {
-      gate = document.createElement('div');
-      gate.className = 'pw-gate';
-      gate.innerHTML = `
-        <div class="pw-gate-icon">🔒</div>
-        <div class="pw-gate-label">Password protected</div>
-        <p class="pw-gate-hint">These case studies contain proprietary research. Request the password when you reach out.</p>
-        <div class="pw-gate-row">
-          <input class="pw-gate-input" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter')submitPw(this)">
-          <button class="pw-gate-btn" onclick="submitPw(this.previousElementSibling)">Unlock</button>
-        </div>
-        <div class="pw-gate-error">Incorrect password — try again.</div>
-      `;
-      body.insertBefore(gate, body.firstChild);
-    }
-
-    body.classList.add('open');
-    toggle.classList.add('open');
-    setTimeout(() => gate.querySelector('.pw-gate-input').focus(), 300);
-  }
-
-  function submitPw(input) {
-    const errorEl = input.closest('.pw-gate').querySelector('.pw-gate-error');
-    if (input.value === PW) {
-      unlockAll();
-    } else {
-      input.classList.add('error');
-      errorEl.style.display = 'block';
-      input.value = '';
-      input.focus();
-    }
+    body.classList.toggle('open');
+    toggle.classList.toggle('open');
   }
 
   // Intersection observer for timeline
